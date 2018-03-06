@@ -3,7 +3,8 @@
 #' 
 #' Produces simplifed, "cleaned" code that is needed to create a result.
 #' 
-#' @param file Path to an R script.
+#' @param 
+Path to an R script.
 #' @param result A desired output present in the script.
 #' @param refresh.prov LOGICAL: do you want the script re-run to generate new provenance?
 #' @return Cleaned-up code as a vector of strings ordered by line number.
@@ -16,7 +17,7 @@ cleanR <- function(file = "Path to an R script",
                    result = "Result name",
                    refresh.prov = FALSE){
     ## Get provenance for script
-    if (exists(file)
+    if (exists(file){
 
     if (refresh.prov){prov.capture(file)}
     if (!refresh.prov & result == "Result name"){
@@ -55,4 +56,5 @@ cleanR <- function(file = "Path to an R script",
         ## Signoff
         print("These codes are clean!", quote = FALSE)
     }
+   }
 }
