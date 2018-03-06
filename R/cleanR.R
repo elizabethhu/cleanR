@@ -16,7 +16,7 @@ cleanR <- function(file = "Path to an R script",
                    result = "Result name",
                    refresh.prov = FALSE){
     ## Get provenance for script
-    if (exists(file)){
+    if (file.exists(file)){
 
     if (refresh.prov){prov.capture(file)}
     if (!refresh.prov & result == "Result name"){
